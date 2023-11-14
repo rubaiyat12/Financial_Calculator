@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculators</title>
+
+    <!-- Bootstrap CSS Linked-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Vanilla CSS Linked-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header start -->
+    <header>
+        <div class="container my-4 ">
+            <!-- heeader title and Image -->
+            <h1 class="text-Secondary text-center ">Financial Calculators <img src="images/icon.png" height="45" alt=""></h1>
+        </div>
+    </header>
+    <main>
+        <!-- main start -->
+        <section class="">
+            <div class="container pb-sm-5">
+                <div class="row  d-flex">
+
+                    <!-- 1st image part start -->
+                    <div class="col-sm-12 col-md-12 col-lg-7 pe-lg-5 d-flex align-self-center ">
+                        <img src="images/4.png" class="img-fluid " alt="">
+                    </div>
+                    <!-- 1st image part start -->
+
+                    <!-- input and calculation section -->
+                    <div class="col-sm-12 col-md-12 col-lg-5 custom-bg ">
+                        <div
+                            class="px-4 d-flex align-items-center justify-content-center py-3 flex-column">
+                            <!-- income input expence and calculate start -->
+                            <table>
+                                <tr>
+                                    <th class="text-center py-2" colspan="2">
+                                        <h6>Income</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-end"><label for="Income">Income:</label></td>
+                                    <td class="text-start ps-3"><input class="form-control" type="text" row="1"
+                                            id="income-money"></td>
+                                </tr>
+                                <tr>
+                                    <th class="text-center py-2" colspan="2">
+                                        <h6>Expenses</h6>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td class="text-end"><label for="food">Food:</label></td>
+                                    <td class="text-start ps-3 pb-1"><input class="form-control" type="text" id="food-money">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-end"><label for="rent">Rent:</label></td>
+                                    <td class="text-start ps-3 py-2"><input class="form-control" type="text" id="rent-money">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-end"><label for="clothes">Clothes:</label></td>
+                                    <td class="text-start ps-3 py-2"><input class="form-control" type="text"
+                                            id="clothes-money"></td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center py-2" colspan="2">
+                                        <button type="button" class="btn btn-primary btn-sm" id="calculate-btn" >Calculate</button>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- income input expence and calculate End-->
+                            
+                            <!-- showing total expense and balance  start -->
+
+                            <h6 id="expense-New-message" class="messege"></h6>
+                            <h6 id="expense-message">Total Expenses: $ <span id="total-expenses">000</span></h6>
+                            <h6 class=" py-1" id="balance-message">Balance: $ <span id="balance">000</span></h6>
+                            <!-- showing total expense and balance end -->
+                            
+                            <!-- Bonus part: Saving  start-->
+                            <div class="d-flex justify-content-evenly align-items-center py-2">
+
+                                <label>Save: </label>
+                                <input type="text" id="save-money" class="form-control w-25">
+                                <span>%</span>
+                                <button type="button" class="btn btn-primary btn-sm w-25" id="save-button" > Save</button>
+
+                            </div>
+                            <h6 id="save-New-message" class="messege"></h6>
+                            <h6 class="py-2" id="saving-value">Saving Amount: $ <span id="saving-amount">000</span></h6>
+                            <h6 class="" id="remaing-value">Remaining Balance: $ <span id="remaining-balance">000</span></h6>
+                            <!-- Bonus part: Saving end -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Bootstrap Script -->
+    <script src="script/practise.js"></script>
+
+    <script src="script/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Script end -->
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+/* overflow hidden */
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+/* laber size */
+label {
+        font-weight: 600;
+        font-size: 14px;
+}
+
+/* 2nd Parts backgrounf color */
+
+.custom-bg{
+    background-color: #F8F8F8;
+}
+/* focus input field */
+.form-control:focus{
+    background-color: #DCDCDC;
+    outline: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.messege{
+    color: red;
+    font-size: 30px;
+    text-align: center;
+}
